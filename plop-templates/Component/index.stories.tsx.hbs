@@ -1,0 +1,13 @@
+import React from "react";
+import { storiesOf } from "@storybook/react";
+import {{pascalCase name}} from ".";
+
+import General from "./readme.md"
+
+const stories = storiesOf('{{type}}|{{titleCase name}}', module);
+
+stories.add('Default', () => (
+<{{pascalCase name}} />
+),
+{notes: {General}}
+);

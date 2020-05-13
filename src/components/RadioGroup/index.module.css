@@ -1,0 +1,66 @@
+/* ------------------------------------ *\
+# CHECKBOXINPUT
+\* ------------------------------------ */
+
+.radioInput {
+  position: absolute;
+  cursor: pointer;
+  left: 0;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  z-index: 1;
+  margin: 0;
+  opacity: 0;
+}
+
+.radioInput:focus + .radioInputLabelText:before {
+  box-shadow: 0 0 0 3px #ffbf47;
+}
+
+.radioInputLabel {
+  display: block;
+  margin: 15px 0;
+  position: relative;
+  font-size: 18px;
+}
+
+.radioInputLabelText {
+  display: flex;
+  align-items: center;
+  font-family: "Open Sans";
+  position: relative;
+}
+
+.radioInputLabelText:before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  background: white;
+  border-radius: 50%;
+}
+
+.radioInput:focus + .radioInputLabelText:before {
+  border-color: #333;
+}
+
+.radioInput:checked + .radioInputLabelText:after {
+  content: "";
+  border: 7px solid #333;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  border-radius: 50%;
+}
+
+.radioGroupLegend {
+  margin: 15px 0;
+}
+
+.radioGroupFieldset {
+  position: relative;
+}

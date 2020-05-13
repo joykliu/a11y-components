@@ -1,0 +1,21 @@
+.textInput {
+  border: 0;
+  border-bottom: 1px solid #767676;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+}
+
+.textInput:focus {
+  border-bottom-color: #333;
+  box-shadow: 0px 2px 0px 0px #ffbf47;
+}
+
+.textInputError {
+  border-bottom-color: crimson;
+}
+
+.textInputContainer {
+  position: relative;
+}

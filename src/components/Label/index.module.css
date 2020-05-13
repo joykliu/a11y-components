@@ -1,0 +1,26 @@
+/* ------------------------------------ *\
+# LABEL
+\* ------------------------------------ */
+.container {
+  padding-top: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.label {
+  position: absolute;
+  font-size: 18px;
+  top: 18px;
+  left: 0;
+  color: #767676;
+  transition: all 0.2s;
+  font-family: "Open Sans";
+}
+
+.labelFloating {
+  top: -14px;
+  bottom: auto;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s;
+}

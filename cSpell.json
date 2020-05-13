@@ -1,0 +1,14 @@
+{
+  "version": "0.1",
+  "language": "en",
+  "flagWords": [],
+  "dictionaries": ["html", "css", "typescript"],
+  "ignorePaths": [
+    "packages/**/node_modules/**/*",
+    "packages/**/CHANGELOG.md",
+    "packages/**/build/**/*",
+    "packages/**/*.spec.ts",
+    "packages/**/*.stories.tsx"
+  ],
+  "words": ["browserslist", "storysource", "Uncategorized"]
+}

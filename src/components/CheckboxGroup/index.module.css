@@ -1,0 +1,16 @@
+/* ------------------------------------ *\
+# CHECKBOXGROUP
+\* ------------------------------------ */
+
+.checkboxGroupLegend {
+  margin: 0;
+}
+
+.checkboxGroupLegendSubtitle {
+  margin: 15px 0;
+  display: block;
+}
+
+.checkboxItemContainer {
+  margin: 15px 0;
+}

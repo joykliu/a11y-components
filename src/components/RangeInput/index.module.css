@@ -1,0 +1,48 @@
+/* ------------------------------------ *\
+# RANGEINPUT
+\* ------------------------------------ */
+
+.inputContainer {
+  border-left: 2px solid #077bbf;
+  border-right: 2px solid #ddd;
+  padding: 5px 0;
+  margin-top: 45px;
+}
+
+.rangeInput {
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 2px; /* Specified height */
+  outline: none; /* Remove outline */
+  display: block;
+  margin: 0;
+  padding: 1px;
+}
+
+.rangeInput::-webkit-slider-thumb:hover,
+.rangeInput:focus::-webkit-slider-thumb {
+  box-shadow: 0 0 0 8px rgba(7, 124, 192, 0.2);
+}
+
+.rangeInput::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #077bbf; /* Blue background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.rangeInput::-moz-range-thumb {
+  appearance: none;
+  width: 20px; /* Set a specific slider handle width */
+  height: 20px; /* Slider handle height */
+  background: #077bbf; /* Blue background */
+  border-radius: 50%;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.rangeInputLabelText {
+  display: block;
+  margin-bottom: 20px;
+}

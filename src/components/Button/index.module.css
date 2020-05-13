@@ -1,0 +1,36 @@
+/* ------------------------------------ *\
+# BUTTON
+\* ------------------------------------ */
+
+.button {
+  font-family: "Open Sans";
+  font-size: 16px;
+  letter-spacing: 0.64px;
+  text-align: center;
+  line-height: 24px;
+  width: 100%;
+  padding: 8px 0;
+  height: 50px;
+  text-transform: uppercase;
+}
+
+.buttonPrimary {
+  background-color: #07244f;
+  border: 1px solid #07244f;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.buttonPrimary:hover {
+  background-color: #385072;
+}
+
+.buttonSecondary {
+  border: 1px solid #07244f;
+  background-color: #fff;
+  color: #07244f;
+}
+
+.buttonSecondary:hover {
+  background-color: #f3f3f3;
+}

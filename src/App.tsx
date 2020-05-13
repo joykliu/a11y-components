@@ -1,25 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import RamenOnboarding from "./components/RamenOnboarding";
+import "./App.css";
+
+const steps = [
+  {
+    path: "/order/name",
+    title: "What is your name?"
+  },
+  {
+    path: "/order/noodle",
+    title: "What kind of noodle would you like?"
+  },
+  {
+    path: "/order/toppings",
+    title: "Please select toppings"
+  },
+  {
+    path: "/order/spice",
+    title: "Spicy?"
+  }
+];
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename="/">
+      <Switch>
+        <Route path="/" component={RamenOnboarding} />
+        {steps.map((step) => (
+          <Route
+            path={step.path}
+            exact
+            component={RamenOnboarding}
+            key={step.path}
+          />
+        ))}
+      </Switch>
+    </BrowserRouter>
   );
 }
 
