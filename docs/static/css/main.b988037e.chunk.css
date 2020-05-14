@@ -264,6 +264,33 @@ blockquote {
 }
 
 /* ------------------------------------ *\
+# LABEL
+\* ------------------------------------ */
+.Label_container__2KSwz {
+  padding-top: 18px;
+  position: relative;
+  width: 100%;
+}
+
+.Label_label__17yxH {
+  position: absolute;
+  font-size: 18px;
+  top: 18px;
+  left: 0;
+  color: #767676;
+  transition: all 0.2s;
+  font-family: "Open Sans";
+}
+
+.Label_labelFloating__2bJ2u {
+  top: -14px;
+  bottom: auto;
+  font-size: 14px;
+  color: #333;
+  transition: all 0.2s;
+}
+
+/* ------------------------------------ *\
 # INPUTERRORMESSAGE
 \* ------------------------------------ */
 
@@ -278,6 +305,38 @@ blockquote {
   padding-top: 8px;
   font-family: "Open Sans";
   font-weight: 700;
+}
+
+.TextInput_textInput__mvWHW {
+  border: 0;
+  border-bottom: 1px solid #767676;
+  padding: 15px 0;
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+}
+
+.TextInput_textInput__mvWHW:focus {
+  border-bottom-color: #333;
+  box-shadow: 0px 2px 0px 0px #ffbf47;
+}
+
+.TextInput_textInputError__2NL1s {
+  border-bottom-color: crimson;
+}
+
+.TextInput_textInputContainer__3Xje3 {
+  position: relative;
+}
+
+/* ------------------------------------ *\
+# NAMESTEP
+\* ------------------------------------ */
+
+.NameStep_nameStepHeading__14abc {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 80px;
 }
 
 /* ------------------------------------ *\
@@ -348,6 +407,122 @@ blockquote {
 }
 
 /* ------------------------------------ *\
+# NOODLESTEP
+\* ------------------------------------ */
+
+.NoodleStep_noodleStepHeading__2iA44 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+/* ------------------------------------ *\
+# TOPPINGSTEP
+\* ------------------------------------ */
+
+.ToppingStep_toppingStepHeading__1cvR8 {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+/* ------------------------------------ *\
+# SPICESTEP
+\* ------------------------------------ */
+
+.SpiceStep_spiceStepHeading__2WlHx {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 80px;
+}
+
+/* ------------------------------------ *\
+# MULTISTEPFORM
+\* ------------------------------------ */
+
+.MultiStepForm_multiStepFormNavigationContainer__30IU5 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px;
+  background: #eef7f1;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  border-top: 5px solid #ccc;
+}
+
+.MultiStepForm_multiStepFormNavigationButton__2Z6uM {
+  max-width: 300px;
+}
+
+.MultiStepForm_multiStepFormNavigationButtonHidden__1-hl1 {
+  visibility: hidden;
+}
+
+.MultiStepForm_multiStepFormNavigationTitle__vvC3o {
+  text-align: center;
+}
+
+.MultiStepForm_multiStepFormStep__DgOO8 {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MultiStepForm_multiStepFormStepContainer__2a4yL {
+  width: 80%;
+}
+
+.MultiStepForm_multiStepFormHeading__CKmxa {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 160px;
+}
+
+.MultiStepForm_progressBar__6yjbJ {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  height: 5px;
+  background: #07244f;
+  transition: width 300ms ease-in-out;
+}
+
+.stepTransition {
+  display: none;
+}
+
+.stepTransition-enter {
+  opacity: 0.3;
+}
+
+.stepTransition-enter ~ .stepTransition-exit-active {
+  display: none;
+}
+
+.stepTransition-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.stepTransition-exit {
+  opacity: 1;
+}
+
+.stepTransition-exit-active {
+  opacity: 0.3;
+  transition: opacity 300ms;
+}
+
+/* ------------------------------------ *\
 # RANGEINPUT
 \* ------------------------------------ */
 
@@ -401,33 +576,6 @@ blockquote {
 }
 
 /* ------------------------------------ *\
-# LABEL
-\* ------------------------------------ */
-.Label_container__2KSwz {
-  padding-top: 18px;
-  position: relative;
-  width: 100%;
-}
-
-.Label_label__17yxH {
-  position: absolute;
-  font-size: 18px;
-  top: 18px;
-  left: 0;
-  color: #767676;
-  transition: all 0.2s;
-  font-family: "Open Sans";
-}
-
-.Label_labelFloating__2bJ2u {
-  top: -14px;
-  bottom: auto;
-  font-size: 14px;
-  color: #333;
-  transition: all 0.2s;
-}
-
-/* ------------------------------------ *\
 # SELECTINPUT
 \* ------------------------------------ */
 
@@ -467,27 +615,5 @@ blockquote {
   z-index: -1;
 }
 
-.TextInput_textInput__mvWHW {
-  border: 0;
-  border-bottom: 1px solid #767676;
-  padding: 15px 0;
-  width: 100%;
-  font-size: 18px;
-  outline: none;
-}
 
-.TextInput_textInput__mvWHW:focus {
-  border-bottom-color: #333;
-  box-shadow: 0px 2px 0px 0px #ffbf47;
-}
-
-.TextInput_textInputError__2NL1s {
-  border-bottom-color: crimson;
-}
-
-.TextInput_textInputContainer__3Xje3 {
-  position: relative;
-}
-
-
-/*# sourceMappingURL=main.0ff23084.chunk.css.map*/
+/*# sourceMappingURL=main.b988037e.chunk.css.map*/
