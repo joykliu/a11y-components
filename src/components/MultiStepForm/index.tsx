@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import { useFormState, useFormApi } from "informed";
 import { History } from "history";
 import classNames from "classnames";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
+// import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { Helmet } from "react-helmet";
 
 import Button from "../Button";
@@ -76,7 +76,7 @@ const MultiStepForm = ({ heading, steps, history, children }: PropsType) => {
     const currentStep = currentStepIndex === -1 ? 0 : currentStepIndex;
     setStep(currentStep);
   }, [history.location.pathname, setStep, steps]);
-
+  console.log(childSteps[step]);
   return (
     <>
       <Helmet>
@@ -89,25 +89,25 @@ const MultiStepForm = ({ heading, steps, history, children }: PropsType) => {
       <div className={styles.multiStepFormStep}>
         <div className={styles.multiStepFormStepContainer}>
           <h1 className={styles.multiStepFormHeading}>{heading}</h1>
-          <TransitionGroup className={styles.transitionGroup}>
+          {/* <TransitionGroup className={styles.transitionGroup}>
             <CSSTransition
               key={history.location.key}
               timeout={{ enter: 300, exit: 300 }}
               unmountOnExit
               mountOnEnter
               classNames="stepTransition"
-            >
-              <div className={styles.routerSection}>
-                <Switch>
-                  <Route path={history.location.pathname}>
-                    <div ref={stepEl} tabIndex={-1}>
-                      {childSteps[step]}
-                    </div>
-                  </Route>
-                </Switch>
-              </div>
-            </CSSTransition>
-          </TransitionGroup>
+            > */}
+          <div className={styles.routerSection}>
+            <Switch>
+              <Route path={history.location.pathname}>
+                <div ref={stepEl} tabIndex={-1}>
+                  {childSteps[step]}
+                </div>
+              </Route>
+            </Switch>
+          </div>
+          {/* </CSSTransition> */}
+          {/* </TransitionGroup> */}
           <div className={styles.multiStepFormNavigationContainer}>
             <div
               role="progressbar"
