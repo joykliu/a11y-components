@@ -9,7 +9,17 @@ module.exports = {
     "@storybook/addon-knobs",
     "@storybook/addon-links",
     "@storybook/addon-notes",
-    "@storybook/addon-storysource",
+    {
+      name: "@storybook/addon-storysource",
+      options: {
+        rule: {
+          test: [/\.stories\.tsx?$/]
+        },
+        loaderOptions: {
+          prettierConfig: { printWidth: 80, singleQuote: false }
+        }
+      }
+    },
     "@storybook/addon-viewport"
   ],
   webpackFinal: async (config, { configType }) => {
@@ -27,12 +37,6 @@ module.exports = {
           options: { parser: "typescript" }
         }
       ],
-      enforce: "pre"
-    });
-
-    config.module.rules.push({
-      test: /\.stories\.jsx?$/,
-      loaders: [require.resolve("@storybook/source-loader")],
       enforce: "pre"
     });
 

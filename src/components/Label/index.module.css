@@ -15,6 +15,7 @@
   color: #767676;
   transition: all 0.2s;
   font-family: "Open Sans";
+  pointer-events: none;
 }
 
 .labelFloating {

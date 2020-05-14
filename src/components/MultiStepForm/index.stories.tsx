@@ -33,7 +33,7 @@ const steps = [
 
 const history = createMemoryHistory();
 
-const stories = storiesOf("Organisms|MultiStepForm", module).addDecorator(
+const stories = storiesOf("Organisms|Multi-step Form", module).addDecorator(
   (story) => (
     <Router history={history}>
       <Route path="/" component={() => story()} />

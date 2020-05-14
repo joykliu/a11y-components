@@ -280,6 +280,7 @@ blockquote {
   color: #767676;
   transition: all 0.2s;
   font-family: "Open Sans";
+  pointer-events: none;
 }
 
 .Label_labelFloating__2bJ2u {
@@ -616,4 +617,4 @@ blockquote {
 }
 
 
-/*# sourceMappingURL=main.b988037e.chunk.css.map*/
+/*# sourceMappingURL=main.bdf37aea.chunk.css.map*/

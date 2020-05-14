@@ -1,0 +1,11 @@
+/* ------------------------------------ *\
+# DATEPICKER
+\* ------------------------------------ */
+
+.datePicker {
+  /* Write some styles */
+}
+
+:global(.CalendarDay) {
+  vertical-align: middle;
+}
