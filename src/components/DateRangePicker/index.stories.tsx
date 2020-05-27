@@ -8,6 +8,14 @@ const stories = storiesOf("Atoms|Date Range Picker", module);
 
 stories.add(
   "Default",
-  () => <DateRangePicker startDateId="startDateId" endDateId="endDateId" />,
+  () => (
+    <div style={{ padding: "100px" }}>
+      <DateRangePicker
+        startDateId="startDateId"
+        endDateId="endDateId"
+        label="Please select a start date and an end date."
+      />
+    </div>
+  ),
   { notes: { General } }
 );

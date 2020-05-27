@@ -12,12 +12,12 @@ type PropsType = {
 
 const Label = ({ htmlFor, floating, label, children }: PropsType) => (
   <label htmlFor={htmlFor} className={styles.container}>
+    {children}
     <span
       className={classnames(styles.label, { [styles.labelFloating]: floating })}
     >
       {label}
     </span>
-    {children}
   </label>
 );
 

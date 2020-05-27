@@ -1,0 +1,33 @@
+/* ------------------------------------ *\
+# DATEPICKER
+\* ------------------------------------ */
+
+.datePickerContainer {
+  position: relative;
+}
+
+.datePickerInputContainer {
+  /* padding: 15px 0; */
+
+  border-bottom: 1px solid #767676;
+}
+
+.datePickerInputContainerFocused,
+.datePickerInputContainerCompleted {
+  border-bottom-color: #333;
+}
+
+.datePickerInputContainerError {
+  border-bottom-color: crimson;
+}
+
+.selectedDate {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-top: 8px;
+  font-family: "Open Sans";
+}

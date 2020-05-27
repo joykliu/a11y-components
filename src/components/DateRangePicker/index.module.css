@@ -2,10 +2,6 @@
 # DATEPICKER
 \* ------------------------------------ */
 
-.datePicker {
-  /* Write some styles */
-}
-
-:global(.CalendarDay) {
-  vertical-align: middle;
+.dateRangePickerLabel {
+  margin-bottom: 15px;
 }

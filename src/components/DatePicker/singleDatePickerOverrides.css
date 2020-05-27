@@ -1,0 +1,25 @@
+.CalendarDay {
+  vertical-align: middle;
+}
+
+.SingleDatePicker,
+.SingleDatePickerInput {
+  width: 100%;
+}
+
+.SingleDatePickerInput .DateInput {
+  width: 100%;
+}
+
+.SingleDatePickerInput .DateInput_input {
+  border: 0;
+  padding: 15px 0;
+}
+
+.DateInput_fang {
+  top: 65px !important;
+}
+
+.SingleDatePicker_picker {
+  top: 76px !important;
+}

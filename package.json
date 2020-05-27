@@ -25,6 +25,7 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-transition-group": "^4.4.1",
+    "shortid": "^2.2.15",
     "storybook-router": "^0.3.4",
     "typescript": "~3.7.2"
   },
@@ -63,6 +64,7 @@
     "@types/react-helmet": "^6.0.0",
     "@types/react-router-dom": "^5.1.5",
     "@types/react-transition-group": "^4.2.4",
+    "@types/shortid": "^0.0.29",
     "@typescript-eslint/eslint-plugin": "^2.24.0",
     "eslint-config-airbnb-typescript": "^7.2.1",
     "eslint-config-prettier": "^6.11.0",
