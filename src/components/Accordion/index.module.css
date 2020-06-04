@@ -1,0 +1,56 @@
+/* ------------------------------------ *\
+# ACCORDION
+\* ------------------------------------ */
+.accordion {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.accordionSection {
+  display: none;
+}
+
+.accordionSectionExpanded {
+  display: block;
+}
+
+.accordionButtonExpandAll {
+  max-width: 256px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.accordionItem {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.accordionTitle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordionItemButton {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: rgb(251, 241, 238);
+  color: #07244f;
+  text-align: left;
+}
+
+.accordionIcon {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.accordionSection {
+  background-color: rgb(238, 247, 241);
+  padding: 15px;
+  font-size: 16px;
+  color: #07244f;
+  line-height: calc(18 / 16);
+}

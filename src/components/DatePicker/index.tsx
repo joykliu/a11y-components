@@ -42,8 +42,6 @@ const DatePicker = asField<PropsType>(
     };
 
     useEffect(() => {
-      console.log("yay");
-
       if (isRequired && touched) {
         if (!value) {
           setError("This field is required");
