@@ -1,4 +1,4 @@
-import React, { ReactNode, Fragment } from "react";
+import React, { Fragment } from "react";
 import shortid from "shortid";
 import styles from "./index.module.css";
 
@@ -8,17 +8,7 @@ type PropsType = {
   rows: Array<string[]>;
 };
 
-type TableType = {
-  Desktop: ReactNode | null;
-  Mobile: ReactNode | null;
-};
-
-const Table: TableType = {
-  Desktop: null,
-  Mobile: null
-};
-
-Table.Desktop = ({ caption, headers, rows }: PropsType) => {
+const Desktop = ({ caption, headers, rows }: PropsType) => {
   return (
     <table className={styles.tableDesktop}>
       <caption className={styles.tableCaption}>{caption}</caption>
@@ -48,7 +38,7 @@ Table.Desktop = ({ caption, headers, rows }: PropsType) => {
   );
 };
 
-Table.Mobile = ({ caption, headers, rows }: PropsType) => {
+const Mobile = ({ caption, headers, rows }: PropsType) => {
   return (
     <div className={styles.tableMobile}>
       <h2 className={styles.tableCaption}>{caption}</h2>
@@ -70,6 +60,11 @@ Table.Mobile = ({ caption, headers, rows }: PropsType) => {
       ))}
     </div>
   );
+};
+
+const Table = {
+  Desktop,
+  Mobile
 };
 
 export default Table;

@@ -16,27 +16,55 @@ import styles from "./index.module.css";
 
 type PropsType = FieldProps<FormValue, FormValues> & {
   label: string;
+  id: string;
 };
 
-const TextInput = ({ keepState, field, label, validate, step }: PropsType) => {
+const TextInput = ({
+  id,
+  keepState,
+  field,
+  label,
+  validate,
+  step,
+  onChange,
+  onFocus,
+  onBlur,
+  value,
+  ...props
+}: PropsType) => {
   const [focused, setFocused] = useState<boolean>(false);
-  const { error, value } = useFieldState(field);
+  const { error, ...state } = useFieldState(field);
+
   return (
     <div className={styles.textInputContainer}>
-      <Label htmlFor={field} floating={focused || Boolean(value)} label={label}>
+      <Label
+        htmlFor={id}
+        floating={focused || Boolean(state.value)}
+        label={label}
+      >
         <InformedTextInput
           className={classnames(styles.textInput, {
             [styles.textInputError]: error
           })}
           aria-describedby={error && `${field}Message`}
           field={field}
-          onFocus={() => setFocused(true)}
-          onBlur={() => setFocused(false)}
+          onFocus={(e) => {
+            if (onFocus) onFocus(e);
+            setFocused(true);
+          }}
+          onBlur={(e) => {
+            if (onBlur) onBlur(e);
+            setFocused(false);
+          }}
           validateOnChange
           validateOnBlur
           validate={validate}
           keepState={keepState}
           step={step}
+          onChange={onChange}
+          value={value}
+          id={id}
+          {...props}
         />
       </Label>
       {error && !focused && <ErrorMessage field={field}>{error}</ErrorMessage>}

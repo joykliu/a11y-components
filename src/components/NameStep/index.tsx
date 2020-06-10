@@ -22,6 +22,7 @@ const NameStep = ({ step }: PropsType) => {
         label="Name"
         keepState
         step={step}
+        id="nameStep"
         validate={isRequired("This field is required.")}
       />
     </>

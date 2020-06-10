@@ -1,0 +1,21 @@
+/* ------------------------------------ *\
+# GOOGLEAUTOCOMPLETE
+\* ------------------------------------ */
+
+.googleAutoComplete {
+  position: relative;
+}
+
+.autoCompleteListContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.autoCompleteListItem {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
+}

@@ -22,8 +22,7 @@ const Modal = ({
   isOpen,
   onRequestClose,
   title,
-  content,
-  aria = {}
+  content
 }: PropsType) => {
   // Ensure all IDs are unique throughout the site.
   const [showModal, setShowModal] = useState(false);

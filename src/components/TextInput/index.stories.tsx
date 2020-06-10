@@ -11,6 +11,7 @@ stories.add("TextInput", () => (
   <Form style={{ padding: "100px" }}>
     <TextInput
       field="name"
+      id="unique-id"
       label="Name"
       validate={isRequired("This field is required.")}
     />

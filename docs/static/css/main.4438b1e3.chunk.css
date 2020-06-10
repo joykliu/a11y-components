@@ -161,6 +161,63 @@ blockquote {
 }
 
 /* ------------------------------------ *\
+# ACCORDION
+\* ------------------------------------ */
+.Accordion_accordion__2EIhX {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+.Accordion_accordionSection__JGwGE {
+  display: none;
+}
+
+.Accordion_accordionSectionExpanded__2DRWq {
+  display: block;
+}
+
+.Accordion_accordionButtonExpandAll__3q-OO {
+  max-width: 256px;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+.Accordion_accordionItem__2m2X- {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.Accordion_accordionTitle__1_W-D {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Accordion_accordionItemButton__1vEFy {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background: rgb(251, 241, 238);
+  color: #07244f;
+  text-align: left;
+}
+
+.Accordion_accordionIcon__1Liu9 {
+  margin-left: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Accordion_accordionSection__JGwGE {
+  background-color: rgb(238, 247, 241);
+  padding: 15px;
+  font-size: 16px;
+  color: #07244f;
+  line-height: calc(18 / 16);
+}
+
+/* ------------------------------------ *\
 # BUTTON
 \* ------------------------------------ */
 
@@ -308,6 +365,82 @@ blockquote {
   font-weight: 700;
 }
 
+.CalendarDay {
+  vertical-align: middle;
+}
+
+.SingleDatePicker,
+.SingleDatePickerInput {
+  width: 100%;
+}
+
+.SingleDatePickerInput .DateInput {
+  width: 100%;
+}
+
+.SingleDatePickerInput .DateInput_input {
+  border: 0;
+  padding: 15px 0;
+}
+
+.DateInput_fang {
+  top: 65px !important;
+}
+
+.SingleDatePicker_picker {
+  top: 76px !important;
+}
+
+/* ------------------------------------ *\
+# DATEPICKER
+\* ------------------------------------ */
+
+.DatePicker_datePickerContainer__2uIFi {
+  position: relative;
+}
+
+.DatePicker_datePickerInputContainer__3EO47 {
+  /* padding: 15px 0; */
+
+  border-bottom: 1px solid #767676;
+}
+
+.DatePicker_datePickerInputContainerFocused__1CsvF,
+.DatePicker_datePickerInputContainerCompleted__3Jnlm {
+  border-bottom-color: #333;
+}
+
+.DatePicker_datePickerInputContainerError__2BFxo {
+  border-bottom-color: crimson;
+}
+
+.DatePicker_selectedDate__3_j7D {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 8px);
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 22px;
+  padding-top: 8px;
+  font-family: "Open Sans";
+}
+
+/* ------------------------------------ *\
+# DATEPICKER
+\* ------------------------------------ */
+
+.DateRangePicker_dateRangePickerLabel__tuiwY {
+  margin-bottom: 15px;
+}
+
+.CalendarDay {
+  vertical-align: middle;
+}
+
+.DateRangePicker_picker {
+  top: 76px !important;
+}
+
 .TextInput_textInput__mvWHW {
   border: 0;
   border-bottom: 1px solid #767676;
@@ -327,6 +460,88 @@ blockquote {
 }
 
 .TextInput_textInputContainer__3Xje3 {
+  position: relative;
+}
+
+/* ------------------------------------ *\
+# GOOGLEAUTOCOMPLETE
+\* ------------------------------------ */
+
+.GoogleAutoComplete_googleAutoComplete__MlRJh {
+  position: relative;
+}
+
+.GoogleAutoComplete_autoCompleteListContainer__6hATI {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.GoogleAutoComplete_autoCompleteListItem__1QK9j {
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* ------------------------------------ *\
+#MODAL
+We should leave only the bare minimum
+of styling on this component to make
+it reusable. ie. Modal box padding can
+be applied to the child components.
+\* ------------------------------------ */
+
+.Modal_modal__3ienQ {
+  background-color: rgb(238, 247, 241);
+  margin: auto;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+  width: 900px;
+  position: relative;
+  padding: 40px 35px;
+}
+
+.Modal_modalOverlay__2XtL8 {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  display: flex;
+  left: 0;
+  opacity: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: opacity 0.25s ease-in-out;
+  z-index: 10;
+}
+.Modal_modalOverlayAfterOpen__2cSuJ {
+  opacity: 1;
+}
+
+.Modal_modalOverlayBeforeClose__BoRpW {
+  opacity: 0;
+}
+
+.Modal_modalCloseContainer__igtX5 {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.Modal_modalHeadingContainer__3LUwG {
+  padding-bottom: 10px;
+}
+
+.Modal_modalTitleDescription__16ODa {
+  white-space: pre-wrap;
+}
+
+.visibly-hidden {
+  z-index: -1;
+  opacity: 0;
   position: relative;
 }
 
@@ -616,5 +831,126 @@ blockquote {
   z-index: -1;
 }
 
+/* ------------------------------------ *\
+# TABMENU
+\* ------------------------------------ */
 
-/*# sourceMappingURL=main.bdf37aea.chunk.css.map*/
+.TabMenu_tabButtonSelected__24oU- {
+  border-top: 3px solid red;
+}
+
+.TabMenu_tab__10Fer {
+  display: none;
+}
+
+.TabMenu_tabButton__3dk2S {
+  padding: 20px 10px;
+  border-radius: 3px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-bottom-color: rgb(251, 241, 238);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background: rgb(251, 241, 238);
+  position: relative;
+  z-index: 1;
+  margin-bottom: -1px;
+  font-size: 18px;
+}
+
+.TabMenu_tabButtonSelected__24oU- {
+  border-top: 3px solid #07244f;
+}
+.TabMenu_tabPanel__3Up7F {
+  display: none;
+}
+
+.TabMenu_tabPanelSelected__3haFH {
+  display: block;
+  padding: 50px 10px;
+  background: rgb(251, 241, 238);
+  border: 1px solid #ccc;
+  max-width: 800px;
+  font-size: 16px;
+}
+
+/* ------------------------------------ *\
+# TABLE
+\* ------------------------------------ */
+
+.Table_tableDesktop__1mbtu,
+.Table_tableMobile__34Krn {
+  color: #07244f;
+  border-collapse: separate;
+  border-collapse: initial;
+  width: 100%;
+  padding: 10px;
+}
+
+.Table_tableDesktop__1mbtu {
+  display: none;
+}
+
+.Table_tableMobile__34Krn {
+  display: block;
+}
+
+.Table_tableRow__3G4ou {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  padding: 15px;
+}
+
+.Table_tableCell__1etdM {
+  padding: 20px;
+  border-collapse: collapse;
+}
+
+.Table_tableHeader__3L44h {
+  padding: 15px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.Table_tableCaption__2O_kE {
+  margin: 40px 0;
+  text-align: left;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.Table_tableHeaderMobile__3Gtsj {
+  background: #07244f;
+  color: rgb(238, 247, 241);
+  padding: 20px 15px;
+}
+
+@media (min-width: 768px) {
+  .Table_tableRow__3G4ou {
+    padding: 0;
+  }
+
+  .Table_tableRow__3G4ou:nth-child(even) {
+    background: rgb(238, 247, 241);
+  }
+
+  .Table_tableMobile__34Krn {
+    display: none;
+  }
+
+  .Table_tableDesktop__1mbtu {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: rgb(251, 241, 238);
+    padding: 0;
+    display: table;
+  }
+
+  .Table_tableHeader__3L44h {
+    padding: 20px;
+  }
+}
+
+
+/*# sourceMappingURL=main.4438b1e3.chunk.css.map*/
