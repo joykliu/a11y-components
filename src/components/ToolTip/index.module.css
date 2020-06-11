@@ -1,0 +1,16 @@
+/* ------------------------------------ *\
+# TOOLTIP
+\* ------------------------------------ */
+
+.tooltipIcon {
+  width: 40px;
+  height: 40px;
+  background-color: #07244f;
+  color: rgb(251, 241, 238);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 900;
+}

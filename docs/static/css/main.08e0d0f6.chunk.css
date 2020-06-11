@@ -952,5 +952,22 @@ be applied to the child components.
   }
 }
 
+/* ------------------------------------ *\
+# TOOLTIP
+\* ------------------------------------ */
 
-/*# sourceMappingURL=main.4438b1e3.chunk.css.map*/
+.ToolTip_tooltipIcon__2IdlA {
+  width: 40px;
+  height: 40px;
+  background-color: #07244f;
+  color: rgb(251, 241, 238);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+
+/*# sourceMappingURL=main.08e0d0f6.chunk.css.map*/
