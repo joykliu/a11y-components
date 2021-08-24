@@ -1,17 +1,28 @@
 version: 2.1
-orbs:
-  node: circleci/node@1.1.6
+
 jobs:
-  build-and-test:
-    executor:
-      name: node/default
+  test:
+    docker:
+      - image: cimg/node:15.1
     steps:
       - checkout
-      - node/with-cache:
-          steps:
-            - run: npm install
-            - run: npm test
+      - restore_cache:
+          # See the configuration reference documentation for more details on using restore_cache and save_cache steps
+          # https://circleci.com/docs/2.0/configuration-reference/?section=reference#save_cache
+          keys:
+            - node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
+      - run:
+          name: install packages
+          command: npm ci
+      - save_cache:
+          key: node-deps-v1-{{ .Branch }}-{{checksum "package-lock.json"}}
+          paths:
+            - ~/.npm
+      - run:
+          name: Run Tests
+          command: npm run test
+
 workflows:
-  build-and-test:
+  orb-free-workflow:
     jobs:
-      - build-and-test
+      - test
